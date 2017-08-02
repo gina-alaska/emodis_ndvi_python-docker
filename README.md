@@ -1,2 +1,4 @@
-# hrrrak_aws
-Automating the WRF build of HRRR-AK in AWS 
+# 
+
+
+docker container with NPS imagery processing code in docker
