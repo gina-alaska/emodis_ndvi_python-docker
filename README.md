@@ -1,4 +1,7 @@
-# Creating a Docker container with NPS for processing code in HTC
+# Creating a Docker container for processing NDVI Metric products in HTC
+This read.me is written as part of a challenge for the Polar Cyber Infrastrcture Hackathon (Stony Brook, NY August 2017)
+
+
 
 # Success for this hackathon looks like:
 * set up docker in HTC
@@ -19,5 +22,7 @@ python code in docker container for HTC for processing and storage
 running yearly
 examples of reporting
 
-
+### Contributors:
+@dayne
+@vlraymond
 
