@@ -4,25 +4,26 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastrcture
 
 
 # Success for this hackathon looks like:
-* set up docker in HTC
+* set up Docker in HTC
 * migrate code into system
 
-### Ultimate goal: 
+#### Ultimate goal: 
 By January 2018 automate application for yearly process of data into NDVI metrics product for NDVI Metrics. Be able to store raw data, results data, and algorithms / application for free or cheaply.
 
 ## Project components:
 * source files from MODIS-NDVI
-* algorithm / application
+* algorithm / application - python code in docker container for HTC for processing and storage
+* HTC
+* Docker
 
-## MODIS-NDVI data
-python code in docker container for HTC for processing and storage
 
 ## history of NDVI Metrics project and UAF-GINA:
-2010 created code
-running yearly
+* 2010 created code for processing 
+* The code is running yearly to process NDVI metrics
 examples of reporting
 
 ### Contributors:
-@dayne
-@vlraymond
+@dayne - Docker containerization
+@jiang-gina - NDVI Metrics application
+@vlraymond - award winning documentation
 
