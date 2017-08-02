@@ -17,10 +17,16 @@ By January 2018 automate application for yearly process of data into NDVI metric
 * Docker
 
 
-## history of NDVI Metrics project and UAF-GINA:
+## History of NDVI Metrics project and UAF-GINA:
 * 2010 created code for processing 
 * The code is running yearly to process NDVI metrics
-examples of reporting
+
+### Affiliated github repos and pre-existing documentation
+https://github.com/gina-alaska/ndvi-metrics/
+https://github.com/gina-alaska/modis-ndvi-metrics
+http://catalog.northslope.org/catalog/entries/3867-modis-derived-ndvi-metrics
+http://gina.alaska.edu/projects/modis-derived-ndvi-metrics
+
 
 ### Contributors:
 @dayne - Docker containerization
