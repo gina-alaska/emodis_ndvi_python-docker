@@ -22,10 +22,10 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastrcture
 * The code has been run yearly since 2010 to process NDVI metrics
 
 #### Affiliated github repos and pre-existing documentation
-https://github.com/gina-alaska/ndvi-metrics/
-https://github.com/gina-alaska/modis-ndvi-metrics
-http://catalog.northslope.org/catalog/entries/3867-modis-derived-ndvi-metrics
-http://gina.alaska.edu/projects/modis-derived-ndvi-metrics
+* https://github.com/gina-alaska/ndvi-metrics/
+* https://github.com/gina-alaska/modis-ndvi-metrics
+* http://catalog.northslope.org/catalog/entries/3867-modis-derived-ndvi-metrics
+* http://gina.alaska.edu/projects/modis-derived-ndvi-metrics
 
 #### Previously published work on this code
 http://www.mdpi.com/2072-4292/7/10/12961
