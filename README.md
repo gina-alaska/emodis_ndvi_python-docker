@@ -5,6 +5,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 
 # Success for this hackathon looks like:
 * create Docker image for testing model
+* create smaller test dataset
 * migrate code into system to test. We will likely test in Google Cloud Platform for the Hackathon.
 
 #### Ultimate goal: 
@@ -14,9 +15,9 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * Make something reproducible for ourselves
 * Be able to store raw data, results data, and algorithms / application for free or cheaply.
 
-#### Reproducibility:
+#### Reproducibility goals:
 * Test this container on multiple platforms (Google, Shifter, Jetstream, others)
-* Make this container work as part of an annual process
+* Make this container work as part of an annual research process
 * Make github repo public and provide open data license
 
 ## Project components:
