@@ -15,8 +15,11 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastrcture
 ## Project components:
 * source files from MODIS-NDVI
 * algorithm / application - python code in docker container for HTC for processing and storage
+* Docker image
+
+## Tools used:
 * HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task.
-* Docker - a software container platform for running the application
+* Docker - a software container platform for running an image of the application
 
 ## History of NDVI Metrics project and UAF-GINA:
 The code has been run yearly since 2010 to process NDVI metrics
