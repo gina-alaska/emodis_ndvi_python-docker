@@ -10,7 +10,10 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 #### Ultimate goal: 
 * By January 2018, refine code and moveto Python
 * By January 2018, automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
+* make something reproducible for oruselves
 * Be able to store raw data, results data, and algorithms / application for free or cheaply.
+
+#### Reproducibility:
 
 ## Project components:
 * source files from MODIS-NDVI
