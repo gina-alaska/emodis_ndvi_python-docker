@@ -17,13 +17,14 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * algorithm / application - python code in docker container for HTC for processing and storage
 * Docker image
 
-#### Diagram (draft):
-![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/NDVItoDocker.jpg)
-
 ## Tools used:
 * HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task. This research was done using resources provided by the Open Science Grid [1,2], which is supported by the National Science Foundation award 1148698, and the U.S. Department of Energy's Office of Science.   
 * Docker - a software container platform for running an image of the application
 * Singularity - read more here: https://cloud4scieng.org/singularity-a-container-system-for-hpc-applications/  
+* Condor - job manager
+
+#### Diagram (draft):
+![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/NDVItoDocker.jpg)
 
 ## History of NDVI Metrics project and UAF-GINA:
 The code has been run yearly since 2012 to process NDVI metrics
