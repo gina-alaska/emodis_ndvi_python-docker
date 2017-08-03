@@ -18,7 +18,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * Docker image
 
 ## Tools used:
-* HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task.
+* HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task. This research was done using resources provided by the Open Science Grid [1,2], which is supported by the National Science Foundation award 1148698, and the U.S. Department of Energy's Office of Science.   
 * Docker - a software container platform for running an image of the application
 
 ## History of NDVI Metrics project and UAF-GINA:
