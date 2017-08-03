@@ -4,16 +4,20 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 
 
 # Success for this hackathon looks like:
-* set up Docker container to run in HTC, we will be using Open Science Grid
-* migrate code into system
+* create Docker image for testing model
+* migrate code into system to test. We will likely test in Google Cloud Platform for the Hackathon.
 
 #### Ultimate goal: 
-* By January 2018, refine code and moveto Python
-* By January 2018, automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
-* make something reproducible for oruselves
+* By January 2018, refine code and move from IDL to Python
+* After successful testing, deploy Docker contianer on OSG HTC platform
+* Automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
+* Make something reproducible for ourselves
 * Be able to store raw data, results data, and algorithms / application for free or cheaply.
 
 #### Reproducibility:
+* Test this container on multiple platforms (Google, Shifter, Jetstream, others)
+* Make this container work as part of an annual process
+* Make github repo public and provide open data license
 
 ## Project components:
 * source files from MODIS-NDVI
