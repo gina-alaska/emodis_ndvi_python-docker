@@ -10,6 +10,6 @@ ENV EXAMPLE foo
 
 # build info
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
-#ADD ./start.sh /start.sh
-#RUN chmod u+x /start.sh
-#CMD ["/start.sh"]
+ADD ./hello.sh /hello.sh
+RUN chmod u+x /hello.sh
+CMD ["./hello.sh"]
