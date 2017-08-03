@@ -1,5 +1,5 @@
 # Processing NDVI Metric products in HTC using containers
-This read.me is written as part of a challenge for the Polar Cyber Infrastrcture Hackathon (Stony Brook, NY August 2017)
+This read.me is written as part of a challenge for the Polar Cyber Infrastructure Hackathon (Stony Brook, NY August 2017)
 
 
 
