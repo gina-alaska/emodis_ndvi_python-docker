@@ -22,7 +22,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * Docker - a software container platform for running an image of the application
 
 ## History of NDVI Metrics project and UAF-GINA:
-The code has been run yearly since 2010 to process NDVI metrics
+The code has been run yearly since 2012 to process NDVI metrics
 
 #### Affiliated github repos and pre-existing documentation
 * https://github.com/gina-alaska/ndvi-metrics/
