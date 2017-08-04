@@ -37,17 +37,16 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 #### OSG Diagram (draft):
 ![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/NDVItoDocker.jpg)
 
-#### Google Cloud Compute Diagram (draft):
+#### Google Cloud Compute Diagram (draft):  
 
 
 ## History of NDVI Metrics project and UAF-GINA:
 The code has been run yearly since 2012 to process NDVI metrics
 
 #### Affiliated github repos and pre-existing documentation
-* https://github.com/gina-alaska/ndvi-metrics/
-* https://github.com/gina-alaska/modis-ndvi-metrics
-* http://catalog.northslope.org/catalog/entries/3867-modis-derived-ndvi-metrics
-* http://gina.alaska.edu/projects/modis-derived-ndvi-metrics
+* Latest - https://github.com/gina-alaska/emodis_ndvi_python  
+* Previous - https://github.com/gina-alaska/ndvi-metrics/, https://github.com/gina-alaska/modis-ndvi-metrics  
+* Catalog entries - http://catalog.northslope.org/catalog/entries/3867-modis-derived-ndvi-metrics, http://gina.alaska.edu/projects/modis-derived-ndvi-metrics  
 
 #### Previously published work on this code
 http://www.mdpi.com/2072-4292/7/10/12961  
