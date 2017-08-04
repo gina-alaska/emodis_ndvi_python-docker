@@ -37,8 +37,8 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 #### OSG Diagram (draft):
 ![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/NDVItoDocker.jpg)
 
-#### Google Cloud Compute (draft):
-![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/)  
+#### Google Cloud Compute Diagram (draft):
+
 
 ## History of NDVI Metrics project and UAF-GINA:
 The code has been run yearly since 2012 to process NDVI metrics
