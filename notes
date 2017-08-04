@@ -1,0 +1,56 @@
+#link for this repository:
+
+https://github.com/gina-alaska/emodis_ndvi_python-docker
+
+#run docker interactive
+
+docker run -it local/emodis_ndvi /bin/bash
+
+#check the ubuntu version
+
+lsb_release -a
+
+#change the branch
+
+git checkout dockerfile
+
+#take a look at remote branchs
+
+git branch -r
+
+#remove docker container
+docker rm container_ID
+
+#remove docker container
+
+docker stop $(docker ps -a -q)
+
+#delete docker iamge
+
+docker rmi image_ID/image_name
+
+#create a docker hub account 
+
+jiangatgina
+
+DaxieJiyun181
+
+#create a scrach image 
+
+tar cv --files-from /dev/null | docker import - scratch
+
+#create a docker
+
+#install python, pip, python-gdal in docker
+
+apt-get update
+
+apt-get install python python-pip python-gdal
+
+
+#copy file between local host and container
+
+docker cp foo.txt mycontainer:/foo.txt
+docker cp mycontainer:/foo.txt foo.txt
+
+
