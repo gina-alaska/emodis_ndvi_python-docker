@@ -18,6 +18,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 
 #### General reuseability / portability goals:
 * Test this container on multiple platforms (Google, Shifter, Jetstream, others)
+* Support users to run container in their local environment
 * Make this container work as part of an annual research process
 * Make github repo public and provide open data license
 
