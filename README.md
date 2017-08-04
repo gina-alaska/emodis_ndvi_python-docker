@@ -7,16 +7,16 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 # Success for this hackathon looks like:
 * create Docker image for testing model
 * create smaller test dataset
-* migrate code into system to test. We will likely test in Google Cloud Platform for the Hackathon.
+* prep * lay groundwork for working with Google Cloud Compute or OSG (or other)
 
 #### Ultimate goal: 
 * By January 2018, refine code and move from IDL to Python
-* After successful testing, deploy Docker contianer on OSG HTC platform
+* After successful testing, deploy Docker container on OSG HTC platform
 * Automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
-* Make something reproducible for ourselves
+* Make something reproducible for our own use, as well as for our funder
 * Be able to store raw data, results data, and algorithms / application for free or cheaply.
 
-#### Reproducibility goals:
+#### General reuseability / portability goals:
 * Test this container on multiple platforms (Google, Shifter, Jetstream, others)
 * Make this container work as part of an annual research process
 * Make github repo public and provide open data license
@@ -28,7 +28,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * build and run commands
 * test dataset - https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/2016-test.tar
 
-## Tools used:
+## Tools used (or that we planned to use):
 * HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task. This research was done using resources provided by the Open Science Grid [1,2], which is supported by the National Science Foundation award 1148698, and the U.S. Department of Energy's Office of Science.   
 * Docker - a software container platform for running an image of the application
 * Singularity - read more here: https://cloud4scieng.org/singularity-a-container-system-for-hpc-applications/  
