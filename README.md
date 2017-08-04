@@ -1,5 +1,6 @@
-# Processing NDVI Metric products in HTC using containers
+# Processing NDVI Metric products using containers
 This read.me is written as part of a challenge for the Polar Cyber Infrastructure Hackathon (Stony Brook, NY August 2017)
+
 
 
 
@@ -24,6 +25,8 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * source files from MODIS-NDVI
 * algorithm / application - python code in docker container for HTC for processing and storage
 * Docker image
+* build and run commands
+* test dataset - https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/2016-test.tar
 
 ## Tools used:
 * HTC - High Throughput Computing, specilizing in using many computing resources over long periods of time to accomplish a computational task. This research was done using resources provided by the Open Science Grid [1,2], which is supported by the National Science Foundation award 1148698, and the U.S. Department of Energy's Office of Science.   
