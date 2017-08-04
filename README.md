@@ -7,7 +7,7 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 # Success for this hackathon looks like:
 * create Docker image for testing model
 * create smaller test dataset
-* prep * lay groundwork for working with Google Cloud Compute or OSG (or other)
+* prep & lay groundwork for working with Google Cloud Compute or OSG (or other)  
 
 #### Ultimate goal: 
 * By January 2018, refine code and move from IDL to Python
@@ -34,8 +34,11 @@ This read.me is written as part of a challenge for the Polar Cyber Infrastructur
 * Singularity - read more here: https://cloud4scieng.org/singularity-a-container-system-for-hpc-applications/  
 * Condor - job manager
 
-#### Diagram (draft):
+#### OSG Diagram (draft):
 ![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/NDVItoDocker.jpg)
+
+#### Google Cloud Compute (draft):
+![alt text](https://github.com/gina-alaska/emodis_ndvi_python-docker/blob/master/)  
 
 ## History of NDVI Metrics project and UAF-GINA:
 The code has been run yearly since 2012 to process NDVI metrics
