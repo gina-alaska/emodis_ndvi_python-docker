@@ -11,5 +11,6 @@ ENV EXAMPLE foo
 # build info
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
 ADD ./hello.sh /hello.sh
+ADD ./2016-test.tar  /2016-test.tar
 RUN chmod u+x /hello.sh
 CMD ["./hello.sh"]
