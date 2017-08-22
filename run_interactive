@@ -1,0 +1,19 @@
+#docker run emodis_ndvi_python_docker_test:latest
+#emodis_ndvi_python_docker_test   latest
+#run docker interactive
+#docker run -it emodis_ndvi_python_docker_test /bin/bash
+#run a docker interactive and share a host dir in container
+#keep the file has the same user and group as host
+#docker run -it -v /var/lib/docker:/var/lib/docker:ro:$user:$group
+#docker run -it -v ~/data/modis_ndvi:/data emodis_ndvi_python_docker_test /bin/bash
+#share files between host and container
+#docker run -it -v ~/data/modis_ndvi:/data:rw:$user:$group emodis_ndvi_python_docker_test /bin/bash
+
+#	docker run \
+#  -e USER_ID=`id -u` \
+#  -e GROUP_ID=`id -g` \
+#  -v $basedir:/workspace
+
+
+#login as your locah host name and share the /home/jzhu4/data
+docker run -ti -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -u $( id -u $USER ):$( id -g $USER ) -v /home/jzhu4/data:/data:rw emodis_ndvi_python /bin/bash

@@ -1,0 +1,49 @@
+2017/7/14, jzhu, migrate NDVI algorithm from IDL code to python code.
+
+git https://github.com/gina-alaska/emodis_ndvi_python.git
+
+
+/usr/bin/python
+
+prepare raw 7-day composite data
+
+download data
+
+cd /data/modis_ndvi/2016/emodis
+
+url=https://dds.cr.usgs.gov/emodis/Alaska/historical/TERRA
+wget --user jiang@gina.alaska.edu --password Gina7Zhu -r -nH --reject="index.html*" -A "*NDVI*QKM*.zip" ${url}/2016
+
+unzip the data
+
+cd ~/projects/nps/ndvi_python/scripts
+./1yr_emodis_250_unzip_v2.bash /home/jzhu4/data/modis_ndvi/2016/emodis/Alaska/historical/TERRA ~/data/modis_ndvi 2016
+
+create file lists flist_ndvi, flist_qual
+
+./1yr_emodis_250_flist.bash ~/data/modis_ndvi 2016
+
+edit oneyear_data_layer_subset_good.py
+
+this complish stack multiple files, spatial filter, output multiple file into a file.
+
+
+raster.GetGeoTransform()
+
+adfGeoTransform[0] /* top left x */
+adfGeoTransform[1] /* w-e pixel resolution */
+adfGeoTransform[2] /* 0 */
+adfGeoTransform[3] /* top left y */
+adfGeoTransform[4] /* 0 */
+adfGeoTransform[5] /* n-s pixel resolution (negative value) */
+
+
+stack one year of tif files
+
+python ./oneyear_data_layer_subset_good.py flist_ndvi flist_bq 0 0 0 0
+
+calcualte metrics
+
+python ./smooth_calculate_metrics_tile_parallel.py stack_ndvi stack_bq
+
+

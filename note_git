@@ -1,0 +1,11 @@
+clone a git repository to local
+
+cd emodis_ndvi_python-docker
+
+git init
+
+git pull git@github.com:gina-alaska/emodis_ndvi_python-docker.git
+
+
+
+

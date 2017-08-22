@@ -1,0 +1,20 @@
+FROM emodis_ndvi_python:latest
+MAINTAINER jiang@alaska.edu
+ENV HOME_EXE /code/emodis_ndvi_python
+ENV HOME_DATA /data
+
+# build info
+RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
+ADD ./hello.sh /hello.sh
+#ADD ./2016-test.tar  /2016-test.tar
+
+#
+#env USER_ID 1000
+#env GROUP_ID 1000
+#cmd bash -lc '\
+#  build.sh && \
+#  chown -R $USER_ID:$GROUP_ID build \
+#
+
+RUN chmod u+x /hello.sh
+CMD ["./hello.sh"]

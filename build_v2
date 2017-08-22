@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#docker build --rm -t emodis_ndvi_python .
+
+docker build -f ./Dockerfile_v2 --rm -t emodis_ndvi_py:v2 .

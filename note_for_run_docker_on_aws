@@ -1,0 +1,38 @@
+2017/8
+
+run docker on AWS
+
+open a AWS console. 
+
+create a container cluster. "NPS-cluster"
+
+create a repository nps_gina
+
+400233858882.dkr.ecr.us-west-2.amazonaws.com/emodis_ndvi_python
+
+#retrieve the docker login command
+
+aws ecr get-login --no-include-email --region us-west-2
+
+
+remove aws
+
+sudo pip  uninstall awscli
+
+#install aws
+
+sudo pip install awscli
+
+#run the login command returned by aws ecr get-login --no-include-email --region us-west-2
+
+
+https://400233858882.dkr.ecr.us-west-2.amazonaws.com
+
+#associate emodis_ndvi_python iamge from local host to https://400233858882.dkr.ecr.us-west-2.amazonaws.com
+
+
+docker tag emodis_ndvi_python:latest 400233858882.dkr.ecr.us-west-2.amazonaws.com/emodis_ndvi_python:latest
+
+#push this image to aws EC2 Container Service(ECS)
+
+docker push 400233858882.dkr.ecr.us-west-2.amazonaws.com/emodis_ndvi_python:latest
