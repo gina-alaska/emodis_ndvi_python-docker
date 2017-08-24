@@ -1,4 +1,0 @@
-#docker run emodis_ndvi_python_docker:latest
-#login as your local host name and share the /home/jzhu4/data
-
-docker run -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -u $( id -u $USER ):$( id -g $USER ) -v /home/jzhu4/data:/data:rw emodis_ndvi_python /run_ndvi_algorithm.bash 2016

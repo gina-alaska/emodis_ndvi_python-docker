@@ -1,4 +1,0 @@
-#docker run local/emodis_ndvi:latest
-#run docker interactive
-docker run -it local/emodis_ndvi /bin/bash
-
