@@ -1,24 +1,25 @@
 # Processing NDVI Metric products in HTC using containers
-This read.me is written as part of a challenge for the Polar Cyber Infrastructure Hackathon (Stony Brook, NY August 2017)
 
 
+This dockerization of the NPS/GINA eMODIS NDVI metrics algorithm  was kicked off as part of the Polar Cyber Infrastructure Hackathon (Stony Brook, NY August 2017)
 
-# Success for this hackathon looks like:
-* create Docker image for testing model
-* create smaller test dataset
-* migrate code into system to test. We will likely test in Google Cloud Platform for the Hackathon.
+# Success for the hackathon looked:
+- [x] create Docker image for testing model
+- [x] create smaller test dataset
+- [x] migrate code into system to test.
 
 #### Ultimate goal: 
-* By January 2018, refine code and move from IDL to Python
-* After successful testing, deploy Docker contianer on OSG HTC platform
-* Automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
-* Make something reproducible for ourselves
-* Be able to store raw data, results data, and algorithms / application for free or cheaply.
+- [ ] By January 2018, refine code and move from IDL to Python
+- [ ] After successful testing, deploy Docker contianer on OSG HTC platform
+- [ ] Automate application for yearly process of data into NDVI metrics product for NDVI Metrics. 
 
 #### Reproducibility goals:
-* Test this container on multiple platforms (Google, Shifter, Jetstream, others)
-* Make this container work as part of an annual research process
-* Make github repo public and provide open data license
+- [ ] Test this container on multiple platforms
+  - [ ] AWS
+  - [ ] Google
+  - [ ] Jetstream or Open Data Grid
+- [ ] Make this container work as part of an annual research process
+- [x] Make github repo public and provide open data license
 
 ## Project components:
 * source files from MODIS-NDVI
@@ -52,3 +53,10 @@ https://irma.nps.gov/DataStore/DownloadFile/522409
 @jiang-gina - NDVI Metrics application  
 @vlraymond - award winning documentation  
 
+# Using and developing for this:
+
+## build new image
+
+To build a new image use: `./build`
+
+## test new image
