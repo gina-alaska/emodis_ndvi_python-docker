@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 docker ps | grep emodis > /dev/null
 if [ $? == 0 ]; then
@@ -30,8 +30,34 @@ fi
 CODE_DIR=`realpath ../emodis_ndvi_python`
 INPUT_DIR=`realpath ./test/2016-test`
 OUTPUT_DIR=`realpath ./test/output`
-RUN_SCRIPT='/code/scripts/ver-for-docker/run_test_data.bash'
+RUN_SCRIPT='scripts/ver-for-docker/run_test_data.bash'
+LAUNCH_USER=`whoami`
+USER_UID=`id -u $LAUNCH_USER`
+USER_GID=`id -g $LAUNCH_USER`
 
-docker run -v $INPUT_DIR:/2016-test -v $OUTPUT_DIR:/output emodis_ndvi_python \
-       -v $CODE_DIR:/code  $RUN_SCRIPT 
+echo MODEL_DIR=$MODEL_DIR
+echo INPUT_DIR=$INPUT_DIR
+echo OUTPUT_DIR=$OUTPUT_DIR
+echo RUN_SCRIPT=$RUN_SCRIPT
+
+if [ ! -f $CODE_DIR/$RUN_SCRIPT ]; then
+  "run script missing: $RUN_SCRIPT from $CODE_DIR"
+  exit 1
 fi
+
+echo "#### Launching Docker #####"
+
+docker run emodis_ndvi_python:latest \
+  -it \
+  -e UID=$USER_UID \
+  -e GID=$USER_GID \
+  -e HOME_EXC='/test/code/' \
+  -e HOME_DATA='/test/input' \
+  -v ${INPUT_DIR}:'/test/input' \
+  -v ${OUTPUT_DIR}:'/test/output' \
+  -v ${CODE_DIR}:'/test/code' \
+  bash
+
+$CMD
+
+#  /test/code/$RUN_SCRIPT 
