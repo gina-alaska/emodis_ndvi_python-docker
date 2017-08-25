@@ -43,11 +43,15 @@ cd $script_dir
 
 mkdir -p ${unzipped_dir}/$year
 
-tar xvf  /code/2016-test.tar -C ${unzipped_dir}/$year
+#raw data are stored at localhost:/data/2016-test/2016. 
+#localhost:/data/2016-test is mapping to docker:/2016-test
 
-mv ${unzipped_dir}/$year/2016-test/* ${unzipped_dir}/$year
+#tar xvf  /code/2016-test.tar -C ${unzipped_dir}/$year
 
-rmdir ${unzipped_dir}/${year}/2016-test
+#mv ${unzipped_dir}/$year/2016-test/* ${unzipped_dir}/$year
+
+#rmdir ${unzipped_dir}/${year}/2016-test
+
 
 mkdir -p ${work_dir}/$year
 
