@@ -47,8 +47,7 @@ fi
 
 echo "#### Launching Docker #####"
 
-docker run emodis_ndvi_python:latest \
-  -it \
+docker run \
   -e UID=$USER_UID \
   -e GID=$USER_GID \
   -e HOME_EXC='/test/code/' \
@@ -56,8 +55,8 @@ docker run emodis_ndvi_python:latest \
   -v ${INPUT_DIR}:'/test/input' \
   -v ${OUTPUT_DIR}:'/test/output' \
   -v ${CODE_DIR}:'/test/code' \
-  bash
+  emodis_ndvi_python:latest \
+  /test/code/$RUN_SCRIPT 
 
 $CMD
 
-#  /test/code/$RUN_SCRIPT 
