@@ -72,7 +72,7 @@ def main():
 
    #openw,unit_smooth,fileout_smooth,/get_lun
 
-   fileout_metrics=wrkdir+sign+filebasen+'_metrics_'+ver+'.tif'
+   fileout_metrics=out_dir+sign+filebasen+'_metrics_'+ver+'.tif'
 
    #define bandname for metrics output file.
 
