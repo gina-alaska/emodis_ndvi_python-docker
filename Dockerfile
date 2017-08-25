@@ -18,26 +18,21 @@ RUN apt-get install -qy git \
 RUN pip install scipy
 
 RUN mkdir /code /data /work
-#clone emodis_ndvi_python from https://github.com/gina-alaska/emodis_ndvi_python-docker.git
-RUN git clone https://github.com/gina-alaska/emodis_ndvi_python-docker.git /code
+# clone latest copy (master) of emodis_ndvi_python
+RUN git clone https://github.com/gina-alaska/emodis_ndvi_python.git /code/emodis_ndvi_python
 
 RUN cd /code/emodis_ndvi_python
 
 ENV HOME_EXC /code/emodis_ndvi_python
+
+# TODO switch scripts up to using seperate input and output
+# option: /data/input /data/output could be good defaults but they should 
+# specified differently
 ENV HOME_DATA /data
 
 # build info
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
 ADD ./hello.sh /hello.sh
-#ADD ./2016-test.tar  /2016-test.tar
-
-#
-#env USER_ID 1000
-#env GROUP_ID 1000
-#cmd bash -lc '\
-#  build.sh && \
-#  chown -R $USER_ID:$GROUP_ID build \
-#
 
 RUN chmod u+x /hello.sh
 CMD ["./hello.sh"]
