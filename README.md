@@ -60,3 +60,22 @@ https://irma.nps.gov/DataStore/DownloadFile/522409
 To build a new image use: `./build`
 
 ## test new image
+
+Run the silly test run: 
+  * `docker run emodis_ndvi_python`
+
+It should say hi and stuff.
+
+### Interactive testing:
+`docker run -it emodis_ndvi_python bash`
+
+```
+cd /code/emodis_ndvi_python/scripts/ver-for-docker
+./run_test_data_v1.bash
+## wait a while
+```
+
+### Automated test:
+```
+./run_test.sh
+```
