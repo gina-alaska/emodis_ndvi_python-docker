@@ -18,7 +18,7 @@ RUN apt-get install -qy git \
 RUN pip install scipy
 
 RUN mkdir /code /data /work /test
-RUN mkdir /test/input /test/output /test/code
+RUN mkdir /test/input /test/output /test/code /test/scratch
 
 # # clone latest copy (master) of emodis_ndvi_python
 # RUN git clone https://github.com/gina-alaska/emodis_ndvi_python.git /code/emodis_ndvi_python

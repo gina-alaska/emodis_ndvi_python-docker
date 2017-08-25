@@ -9,15 +9,16 @@ fi
 if [ ! -d ./test/2016-test ]; then
   echo 'extracting test/2016-test.tar to test/input'
   tar xf ./test/2016-test.tar -C ./test/
-else
-  echo 'detected test data available in test/2016-input - skipping extraction'
+fi
+
+if [ ! -d ./test/scratch ]; then
+  echo "making scratch dir"
+  mkdir ./test/scratch
 fi
 
 if [ ! -d ./test/output ]; then
   echo 'creating output directory';
   mkdir ./test/output
-else
-  echo 'detected existing output directory ... should we clean it up????'
 fi
 
 if [ ! -d ../emodis_ndvi_python ]; then
@@ -30,6 +31,7 @@ fi
 CODE_DIR=`realpath ../emodis_ndvi_python`
 INPUT_DIR=`realpath ./test/2016-test`
 OUTPUT_DIR=`realpath ./test/output`
+SCRATCH_DIR=`realpath ./test/scratch`
 RUN_SCRIPT='scripts/ver-for-docker/run_test_data.bash'
 LAUNCH_USER=`whoami`
 USER_UID=`id -u $LAUNCH_USER`
@@ -38,6 +40,7 @@ USER_GID=`id -g $LAUNCH_USER`
 echo MODEL_DIR=$MODEL_DIR
 echo INPUT_DIR=$INPUT_DIR
 echo OUTPUT_DIR=$OUTPUT_DIR
+echo SCRATCH_DIR=$OUTPUT_DIR
 echo RUN_SCRIPT=$RUN_SCRIPT
 
 if [ ! -f $CODE_DIR/$RUN_SCRIPT ]; then
@@ -54,6 +57,7 @@ docker run \
   -e HOME_DATA='/test/input' \
   -v ${INPUT_DIR}:'/test/input' \
   -v ${OUTPUT_DIR}:'/test/output' \
+  -v ${SCRATCH_DIR}:'/test/scratch' \
   -v ${CODE_DIR}:'/test/code' \
   emodis_ndvi_python:latest \
   /test/code/$RUN_SCRIPT 
