@@ -13,5 +13,18 @@
 3. you can verify the emodis_ndvi_algorithm in the docker emodis_ndvi_pyalgorithm in the docker emodis_ndvi_python
 
 
+#2017/10/10, lean git push and pull
+
+git push --set-upstream origin justtest
+
+git checkout master
+
+#delete a branch
+git branch -d justest
+#go into master, checkout
+
+ git checkout -b justtest1
+
+
 
 
