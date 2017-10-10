@@ -25,6 +25,8 @@ git branch -d justest
 
  git checkout -b justtest1
 
+#push a new branch
 
+git push --set-upstream origin justtest1
 
 
