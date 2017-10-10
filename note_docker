@@ -13,20 +13,54 @@
 3. you can verify the emodis_ndvi_algorithm in the docker emodis_ndvi_pyalgorithm in the docker emodis_ndvi_python
 
 
-#2017/10/10, lean git push and pull
+#2017/10/10, learn git command. 
+
+
+master local           master remote
+
+
+
+$$$$ The develop cycle with the help of git repository $$$$
+
+git clone (if local master not exist ) or git pull 
+
+you can create a new branceh, work on the branch,
+
+after you have done, you can git add, git commit, and git push.
+
+new branch will be created in remote repository.
+
+in the github, you can send a pull request to your collaborators. ask himto review and merge the pull regest. the the modification of your new branch will be merged into master branch. you can delete your local branch.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
 
 git push --set-upstream origin justtest
 
 git checkout master
 
 #delete a branch
-git branch -d justest
-#go into master, checkout
 
- git checkout -b justtest1
+git branch -d justest
+
+#go into master, create a new branch, this branch include master and new branch
+
+git checkout -b justtest1
 
 #push a new branch
 
 git push --set-upstream origin justtest1
 
+#delete a dir on github
 
+git rm -r --cached test
+
+git commit -am "delete a dir"
+
+git push
+
+
+
+ 
