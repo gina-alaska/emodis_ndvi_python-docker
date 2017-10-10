@@ -6,6 +6,29 @@ git init
 
 git pull git@github.com:gina-alaska/emodis_ndvi_python-docker.git
 
+#check the branch local and remote
 
+git branch -a
+
+git fetch origin
+
+#copy a remote branch to local branch
+
+git checkout -b test origin/test
+
+#delete a local_branch
+
+git branch -d the_local_branch
+
+
+Delete your local branch: git branch -d local_branch
+Fetch the latest remote branch: git fetch origin remote_branch
+Rebuild the local branch based on the remote one: git checkout -b local_branch origin/remote_branch
+
+git pull  # sync loacl with remote
+
+git checkout dbb  #switch to origin/dbb
+
+git checkout -b dbb_test  #create dbb_test from origin/dbb and switch to dbb_test
 
 
