@@ -16,4 +16,11 @@
 
 
 #login as your locah host name and share the /home/jzhu4/data
-docker run -ti -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -u $( id -u $USER ):$( id -g $USER ) -v /home/jzhu4/data:/data:rw emodis_ndvi_python /bin/bash
+
+#mapping volumns
+
+host_vol=~/data/modis_ndvi
+
+docker_vol=/data
+
+docker run -ti -v /etc/group:/etc/group:ro -v /etc/passwd:/etc/passwd:ro -u $( id -u $USER ):$( id -g $USER ) -v ${host_vol}:${docker_vol}:rw emodis_ndvi_python /bin/bash

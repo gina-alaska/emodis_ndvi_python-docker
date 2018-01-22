@@ -1,0 +1,11 @@
+1. build a docker iamge
+./build
+
+2. interactive run the docker
+
+./start_docker_interactive
+
+3. inside docker container, run process main program
+
+/code/run_ndvi_algorithm.bash $yyyy
+
