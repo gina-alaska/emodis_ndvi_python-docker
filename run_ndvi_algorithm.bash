@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if [ $# !=1 ];then
+if [ $# != 1 ];then
 
   echo "input:year"
   exit 1
 
 fi
+
+year=$1
 
 echo "run NDVI algorithm to produce NDVI metrics"
 
